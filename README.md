@@ -41,7 +41,7 @@ Library yang digunakan:
 ```
 
 ## 🔐 Konfigurasi .env
-Buka file `.env` di root proyek dan isi:
+Buat file `.env` di root proyek dan isi:
 ```
 GEMINI_API_KEY=ISI_DENGAN_KUNCI_API_KAMU
 ```
