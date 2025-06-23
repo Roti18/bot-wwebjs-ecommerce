@@ -4,3 +4,5 @@ session/
 *.log
 .DS_Store
 *.local-chromium/
+.wwebjs_auth
+.wwebjs_cache
