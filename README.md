@@ -52,6 +52,18 @@ Buka file `.env` di root proyek dan isi:
 GEMINI_API_KEY=ISI_DENGAN_KUNCI_API_KAMU
 ```
 
+## ⚙️ Konfigurasi Grup
+
+Anda dapat mengatur bagaimana bot berinteraksi di dalam grup dengan mengubah variabel public di dalam file index.js.
+
+    const public = false;
+
+Bot hanya akan merespons di grup jika di-tag (@mention). Ini adalah mode default untuk menghindari spam.
+
+    const public = true;
+
+Bot akan merespons setiap pesan yang masuk di grup, tanpa perlu di-tag.
+
 ## 🚀 Menjalankan Bot
 
 1. Install dependencies:
@@ -65,7 +77,9 @@ npm install
 ```bash
 node index.js
 ```
+
 atau
+
 ```bash
 npm run dev
 ```
