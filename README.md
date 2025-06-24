@@ -84,6 +84,8 @@ Contoh pertanyaan yang bisa kamu kirim ke bot:
 - Semua data diambil dari file JSON (bisa diupdate manual)
 - Jika pertanyaan tidak dikenal, Gemini AI akan mencoba menjawab
 
-## 📄 Lisensi
+## 📜 License
 
-# MIT License © 2025 SixFussion Developer Team
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
