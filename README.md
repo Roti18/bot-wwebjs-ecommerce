@@ -65,6 +65,10 @@ npm install
 ```bash
 node index.js
 ```
+atau
+```bash
+npm run dev
+```
 
 3. Scan QR code yang muncul di terminal dengan WhatsApp kamu
 
