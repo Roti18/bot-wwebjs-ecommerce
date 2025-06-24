@@ -135,29 +135,6 @@ async function handleMessage(message) {
     return client.sendMessage(chatId, addWatermark(errorMsg));
   }
 
-  const games = data.game;
-
-  if (userMsg.startsWith("//cari ")) {
-    const query = userMsg.replace("//cari ", "").trim();
-    const game = cariGame(query, games);
-    const pesan = game
-      ? `✨ Saya menemukan game *"${game.nama}"* untuk kata kunci "${query}".`
-      : `⚠️ Maaf, tidak ada game yang cocok dengan kata kunci "${query}".`;
-    logChat(userMsg, pesan);
-    return client.sendMessage(chatId, addWatermark(pesan));
-  }
-
-  if (userMsg === "data") {
-    const prompt = `Berikut adalah data JSON yang saya miliki:\n${JSON.stringify(
-      data,
-      null,
-      2
-    )}\nTolong jelaskan isi data ini secara singkat.`;
-    const aiReply = await getGeminiResponse(prompt);
-    logChat(userMsg, aiReply);
-    return client.sendMessage(chatId, addWatermark(aiReply));
-  }
-
   const aiReply = await getGeminiResponse(message.body);
   logChat(userMsg, aiReply);
   return client.sendMessage(chatId, addWatermark(aiReply));
